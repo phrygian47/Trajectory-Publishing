@@ -3,23 +3,45 @@
   flex-direction: column;
   align-items: center;
   padding: 3rem;
+  gap: 1rem;
 }
 
-.img_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.grid {
   width: 100%;
-  height: 50vh;
-  height: 50svh;
-  height: 50dvh;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
 }
 
-.img_container img {
+.card {
+  display: grid;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  justify-items: center;
+}
+
+.cover {
   width: 100%;
+  max-width: 220px;
   height: auto;
-  max-width: 300px;
-  max-height: 400px;
-  margin-bottom: 1.5rem;
   border-radius: 1rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
