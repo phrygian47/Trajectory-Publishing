@@ -3,8 +3,10 @@
 }
 
 .hero_image {
-  background: url("../../../assets/background_placeholder.jpg");
-  height: 100dvh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.35) 0 0),
+    url("../../../assets/background_placeholder.jpg");
+  min-height: 100dvh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -23,9 +25,8 @@
   text-align: center;
   padding: 1.5rem 2rem;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   color: var(--bg-alt);
-  background: linear-gradient(rgba(0, 0, 0, 0.35) 0 0);
 }
 
 .hero_text h2,
@@ -34,7 +35,7 @@
 }
 
 .hero_text h2 {
-  font-size: 4.125rem;
+  font-size: clamp(2.5rem, 1rem + 10vw, 6rem);
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
@@ -43,7 +44,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 0.75rem;
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 1rem + 10vw, 1.5rem);
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
   text-align: right;
 }
@@ -96,21 +97,27 @@
   letter-spacing: 1px;
   transition:
     transform 120ms ease,
-    background 200ms ease,
+    background-color 200ms ease,
     box-shadow 200ms ease,
     border-color 200ms ease;
 }
 
 .primary {
-  background: rgba(255, 255, 255, 0.18);
-  border-color: rgba(255, 255, 255, 0.38);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+  background: rgba(120, 170, 135, 0.22);
+  border: 1px solid rgba(210, 255, 225, 0.35);
+  box-shadow:
+    0 16px 44px rgba(0, 0, 0, 0.38),
+    0 0 0 1px rgba(255, 255, 255, 0.1) inset,
+    0 1px 0 rgba(255, 255, 255, 0.25) inset;
 }
 
 .secondary {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.22);
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0.92;
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.16),
+    0 0 0 1px rgba(255, 255, 255, 0.08) inset;
 }
 
 .cta_btn:visited {
@@ -119,6 +126,7 @@
 
 .cta_btn:active {
   background: rgba(255, 255, 255, 0.35);
+  transform: scale(1.1);
 }
 
 @media (orientation: landscape) and (max-height: 500px) {

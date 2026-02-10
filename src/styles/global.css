@@ -6,6 +6,7 @@
 
 :root {
   --bg-main: #546d57;
+  --bg-main-rgb: 84 109 87;
   --bg-alt: #ecebe4;
 }
 
@@ -25,6 +26,11 @@ body {
       transparent 52%
     );
   background-size: 50px 50px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }
 
 html,

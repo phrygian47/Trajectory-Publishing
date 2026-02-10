@@ -17,7 +17,7 @@ export default function Hero() {
               </em>
             </p>
           </div>
-          <div className={styles.cta_btns}>
+          <div className={`${styles.cta_btns} container`}>
             <a href="#books" className={`${styles.cta_btn} ${styles.primary}`}>
               Start Learning
             </a>

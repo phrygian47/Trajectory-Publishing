@@ -15,10 +15,10 @@ export default function Header() {
         <nav className={styles.desktopNav}>
           <ul className={styles.navList}>
             <li>
-              <a href="#about">About</a>
+              <a href="#books">Our Books</a>
             </li>
             <li>
-              <a href="#books">Our Books</a>
+              <a href="#about">About</a>
             </li>
             <li>
               <a href="#contact">Contact Us</a>
@@ -53,15 +53,16 @@ export default function Header() {
       >
         <ul className={styles.mobileList}>
           <li>
-            <a href="#about" onClick={() => setOpen(false)}>
-              About
-            </a>
-          </li>
-          <li>
             <a href="#books" onClick={() => setOpen(false)}>
               Our Books
             </a>
           </li>
+          <li>
+            <a href="#about" onClick={() => setOpen(false)}>
+              About
+            </a>
+          </li>
+
           <li>
             <a href="#contact" onClick={() => setOpen(false)}>
               Contact Us
