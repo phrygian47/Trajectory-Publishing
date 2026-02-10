@@ -34,37 +34,113 @@
 }
 
 .hero_text h2 {
-  font-size: 2.125rem;
+  font-size: 4.125rem;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .hero_text p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 0.75rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  text-align: right;
+}
+
+.past,
+.present,
+.future {
+  font-weight: 700;
+  font-style: normal;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.65);
+}
+
+.past {
+  color: #c46a5a;
+}
+.present {
+  color: #c9a968;
+}
+.future {
+  color: #7fa68a;
+}
+
+.cta_btns {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  align-items: center;
+  margin-top: 18px;
 }
 
 .cta_btn {
-  padding: 1rem;
-  margin: 2rem;
-  background: var(--bg-alt);
-  border-radius: 100vw;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   text-decoration: none;
-  color: black;
+  padding: 1rem 2rem;
+  border-radius: 100vw;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 1.125rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  transition:
+    transform 120ms ease,
+    background 200ms ease,
+    box-shadow 200ms ease,
+    border-color 200ms ease;
+}
+
+.primary {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.38);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.35);
+}
+
+.secondary {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
 }
 
 .cta_btn:visited {
-  color: black;
+  color: white;
 }
 
-@media (min-width: 768px) {
-  .hero_image {
-    height: 70dvh;
-  }
+.cta_btn:active {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
   .hero_text h2 {
-    font-size: 2.75rem;
+    font-size: clamp(2.25rem, 6vw, 3.25rem);
   }
+
   .hero_text p {
-    font-size: 1.8rem;
+    font-size: clamp(1rem, 3vw, 1.35rem);
+  }
+
+  .cta_btn {
+    font-size: 1rem;
+    padding: 0.85rem 1.5rem;
+  }
+
+  .hero_text {
+    padding: 1rem 1.25rem;
+  }
+  .cta_btns {
+    flex-direction: row;
+    margin-top: 12px;
+    gap: 10px;
   }
 }

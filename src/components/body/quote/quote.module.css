@@ -6,6 +6,7 @@
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.375rem;
+  display: none;
 }
 
 .red {

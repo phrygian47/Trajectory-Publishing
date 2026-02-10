@@ -71,6 +71,13 @@
   background: inherit;
   color: white;
   cursor: pointer;
+  border-radius: 10px;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+button.hamburger:active {
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .mobileMenu {
@@ -89,7 +96,7 @@
   pointer-events: none;
 
   transition:
-    max-height 220ms ease,
+    max-height 320ms ease,
     opacity 180ms ease;
 }
 

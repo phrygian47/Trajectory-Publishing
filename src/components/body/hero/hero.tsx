@@ -6,16 +6,28 @@ export default function Hero() {
       <div className={styles.hero_image}>
         <div className={styles.hero_text}>
           <div>
-            <h2>Trajectory Publishing LLC</h2>
+            <h2>Trajectory Publishing</h2>
             <p>
               <em>
-                Understanding our Past, Seizing the Present, Charting our Future
+                Understanding our <span className={styles.past}>Past</span>
+                <br />
+                Seizing the <span className={styles.present}>Present</span>
+                <br />
+                Charting our <span className={styles.future}>Future</span>
               </em>
             </p>
           </div>
-          <a href="#books" className={styles.cta_btn}>
-            Learn More
-          </a>
+          <div className={styles.cta_btns}>
+            <a href="#books" className={`${styles.cta_btn} ${styles.primary}`}>
+              Start Learning
+            </a>
+            <a
+              href="/external"
+              className={`${styles.cta_btn} ${styles.secondary}`}
+            >
+              Manipulation Literacy Test
+            </a>
+          </div>
         </div>
       </div>
     </div>
