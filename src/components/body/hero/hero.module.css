@@ -131,11 +131,11 @@
 
 @media (orientation: landscape) and (max-height: 500px) {
   .hero_text h2 {
-    font-size: clamp(2.25rem, 6vw, 3.25rem);
+    font-size: clamp(2.25rem, 1rem + 6vw, 3.25rem);
   }
 
   .hero_text p {
-    font-size: clamp(1rem, 3vw, 1.35rem);
+    font-size: clamp(1rem, 1rem + 3vw, 1.35rem);
   }
 
   .cta_btn {
