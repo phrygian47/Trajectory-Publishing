@@ -13,6 +13,9 @@ export default function Hero() {
               </em>
             </p>
           </div>
+          <a href="#books" className={styles.cta_btn}>
+            Learn More
+          </a>
         </div>
       </div>
     </div>

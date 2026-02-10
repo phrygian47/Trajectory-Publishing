@@ -4,7 +4,7 @@
 
 .hero_image {
   background: url("../../../assets/background_placeholder.jpg");
-  height: 60dvh;
+  height: 100dvh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -17,6 +17,7 @@
 
 .hero_text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -43,7 +44,23 @@
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
 }
 
+.cta_btn {
+  padding: 1rem;
+  margin: 2rem;
+  background: var(--bg-alt);
+  border-radius: 100vw;
+  text-decoration: none;
+  color: black;
+}
+
+.cta_btn:visited {
+  color: black;
+}
+
 @media (min-width: 768px) {
+  .hero_image {
+    height: 70dvh;
+  }
   .hero_text h2 {
     font-size: 2.75rem;
   }

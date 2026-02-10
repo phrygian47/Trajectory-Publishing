@@ -3,7 +3,11 @@
   background: var(--bg-main);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding: 8px 0;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
 }
 
 .inner {
@@ -74,19 +78,19 @@
   left: 0;
   right: 0;
   top: 100%;
-  z-index: 999;
-  padding: 1rem;
+  z-index: 500;
 
+  padding: 0 1rem;
   background: var(--bg-main);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
 
-  opacity: 0;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 1;
   pointer-events: none;
 
   transition:
-    transform 200ms ease,
-    opacity 200ms ease;
+    max-height 220ms ease,
+    opacity 180ms ease;
 }
 
 .mobileMenuOpen {
@@ -99,6 +103,24 @@
   transform-origin: top;
 }
 
+.mobileMenu::before {
+  content: "";
+  display: block;
+  height: 1rem;
+}
+
+.mobileMenuOpen {
+  max-height: 320px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobileMenu::after {
+  content: "";
+  display: block;
+  height: 1rem;
+}
+
 .mobileList {
   display: flex;
   justify-content: center;
@@ -108,12 +130,12 @@
 }
 
 .mobileMenu .mobileList {
-  transform: translateY(-4px);
-  transition: transform 200ms ease;
+  opacity: 0;
+  transition: opacity 200ms ease;
 }
-
 .mobileMenuOpen .mobileList {
-  transform: translateY(0);
+  opacity: 1;
+  transition: opacity 200ms ease;
 }
 
 /* Desktop breakpoint */

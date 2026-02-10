@@ -1,0 +1,14 @@
+.quote_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+
+.red {
+  color: brown;
+  font-style: italic;
+}
