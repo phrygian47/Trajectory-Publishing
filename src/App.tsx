@@ -2,6 +2,7 @@ import Header from "./components/header/Header";
 import Hero from "./components/body/hero/Hero";
 import Quote from "./components/body/quote/Quote";
 import Books from "./components/body/books/Books";
+import About from "./components/body/about/About";
 
 export default function App() {
   return (
@@ -18,7 +19,9 @@ export default function App() {
           <section id="books">
             <Books></Books>
           </section>
-          <section id="about">About slider</section>
+          <section id="about">
+            <About></About>
+          </section>
           <section id="contact">Contact</section>
         </main>
       </div>
