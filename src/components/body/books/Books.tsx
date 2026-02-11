@@ -3,7 +3,7 @@ import book1 from "@/assets/placeholder-book.jpg";
 
 export default function Books() {
   const books = [
-    { id: "1", title: "Book One", href: "/book/1", cover: book1 },
+    { id: "1", title: "The Keokuk Principle", href: "/book/1", cover: book1 },
     { id: "2", title: "Book Two", href: "/book/2", cover: book1 },
     { id: "3", title: "Book Three", href: "/book/3", cover: book1 },
   ];

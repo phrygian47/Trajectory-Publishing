@@ -5,9 +5,7 @@ import "./styles/global.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <div>
-      <App />
-    </div>
+    <App />
   </StrictMode>,
 );
 
