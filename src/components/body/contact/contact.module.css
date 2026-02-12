@@ -1,0 +1,96 @@
+.contact_banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-main);
+  margin: 0;
+  border-top: 2px solid var(--accent);
+  border-bottom: 2px solid var(--accent);
+  color: white;
+}
+
+.contact_banner h2 {
+  font-size: clamp(1.5rem, 1rem + 2vw, 3rem);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.05em;
+}
+
+.contact_card {
+  background: var(--bg-alt);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.contact_card h2 {
+  font-weight: 600;
+  font-size: clamp(2rem, 1rem + 1vw, 2.5rem);
+}
+
+.contact_card hr {
+  border: none;
+  width: 40%;
+  height: 4px;
+  background-color: #546d57;
+  border-radius: 100vw;
+  margin: 0 0 1.25rem 0;
+}
+
+.contact_inputs {
+  padding: 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #666;
+  border-radius: 100vw;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact_card button {
+  background: var(--bg-main);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid color-mix(in srgb, var(--bg-main) 80%, black 20%);
+  border-radius: 100vw;
+  font-size: 1.125rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  box-shadow: 0 4px 15px rgba(201, 169, 104, 0.4);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  transition:
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+.contact_card button:focus {
+  outline: none;
+  transform: scale(1.03);
+}
+
+.contact_cardbutton:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.contact_card button:active {
+  transform: scale(0.97);
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

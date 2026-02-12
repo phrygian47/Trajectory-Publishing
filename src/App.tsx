@@ -3,6 +3,7 @@ import Hero from "./components/body/hero/Hero";
 import Quote from "./components/body/quote/Quote";
 import Books from "./components/body/books/Books";
 import About from "./components/body/about/About";
+import Contact from "./components/body/contact/Contact";
 
 export default function App() {
   return (
@@ -22,7 +23,9 @@ export default function App() {
           <section id="about">
             <About></About>
           </section>
-          <section id="contact">Contact</section>
+          <section id="contact">
+            <Contact></Contact>
+          </section>
         </main>
       </div>
       <footer>Footer</footer>
