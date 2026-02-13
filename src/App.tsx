@@ -4,6 +4,7 @@ import Quote from "./components/body/quote/Quote";
 import Books from "./components/body/books/Books";
 import About from "./components/body/about/About";
 import Contact from "./components/body/contact/Contact";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
@@ -28,7 +29,9 @@ export default function App() {
           </section>
         </main>
       </div>
-      <footer>Footer</footer>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </>
   );
 }
