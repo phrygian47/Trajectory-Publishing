@@ -8,7 +8,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={`container ${styles.inner}`}>
         <a href="/" className={styles.logo}>
-          <img src="./src/assets/logo-placeholder.svg" alt="placeholder logo" />
+          <img src="./src/assets/logo.png" alt="logo image" />
         </a>
 
         {/* Desktop nav (hidden on mobile) */}
