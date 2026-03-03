@@ -42,6 +42,11 @@ body,
   padding: 0;
 }
 
+html {
+  scroll-padding-top: 62px;
+  scroll-behavior: smooth;
+}
+
 #root {
   max-width: none;
 }

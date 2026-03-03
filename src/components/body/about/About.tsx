@@ -1,23 +1,27 @@
 import styles from "./about.module.css";
-import image from "@/assets/background_placeholder.jpg";
+import image from "@/assets/full-logo.png";
 
 export default function AboutSection() {
   return (
     <section className={styles.about_container}>
       <div className={`${styles.about_card} container`}>
-        <h2>Our Mission</h2>
-        <h4>
-          <em>Empowering Lives Through Power & Choice</em>
-        </h4>
-        <img src={image} alt="placeholder image" />
-        <p>
-          At Trajectory Publishing LLC, we create impactful works that enable
-          individuals to understand and take control of their lives. While
-          external factors may ultimately be uncertain and out of our control,
-          we can surely choose the principles that guide us. Through this, we
-          cultivate inner peace and stability which provides a foundation in
-          life's storms that many struggle to find.
-        </p>
+        <div className={styles.about_card__item}>
+          <h2>Our Mission</h2>
+          <h4>
+            <em>Empowering Lives Through Power & Choice</em>
+          </h4>
+          <img src={image} alt="Trajectory Publishing full logo" />
+        </div>
+        <div className={styles.about_card__item}>
+          <p>
+            At Trajectory Publishing LLC, we create impactful works that enable
+            individuals to understand and take control of their lives. While
+            external factors may ultimately be uncertain and out of our control,
+            we can surely choose the principles that guide us. Through this, we
+            cultivate inner peace and stability which provides a foundation in
+            life's storms that many struggle to find.
+          </p>
+        </div>
       </div>
       <div className={`${styles.about_card} container`}>
         <h2>Our Story</h2>
