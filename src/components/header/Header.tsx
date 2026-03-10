@@ -9,6 +9,7 @@ export default function Header() {
       <div className={`container ${styles.inner}`}>
         <a href="/" className={styles.logo}>
           <img src="./src/assets/logo.png" alt="logo image" />
+          <p>Trajectory Publishing</p>
         </a>
 
         {/* Desktop nav (hidden on mobile) */}

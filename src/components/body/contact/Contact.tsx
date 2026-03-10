@@ -4,7 +4,7 @@ import styles from "./contact.module.css";
 export default function Contact() {
   const [status, setStatus] = useState("idle");
 
-  async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function onSubmit(e: React.SubmitEvent<HTMLFormElement>) {
     e.preventDefault();
     setStatus("submitting");
     const formData = new FormData(e.currentTarget);

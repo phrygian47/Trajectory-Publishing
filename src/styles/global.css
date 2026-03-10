@@ -42,6 +42,11 @@ body,
   padding: 0;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
   scroll-padding-top: 62px;
   scroll-behavior: smooth;
